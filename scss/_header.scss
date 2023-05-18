@@ -1,0 +1,130 @@
+.intro {
+    background-image: url(../img/intro.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 1080px;
+
+    padding: 118px 0 106px;
+
+    &__title {
+        margin: 279px 0 0 0.495em;
+
+        text-align: center;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 133px;
+        line-height: 161px;
+        letter-spacing: 0.495em;
+
+        color: #ffffff;
+    }
+
+    &__subtitle {
+        margin: 0 0 0 2.245em;
+
+        text-align: center;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 2.245em;
+
+        color: #ffffff;
+    }
+
+    &__rectangle {
+        margin: 155px 0 0;
+        background: rgba(0, 0, 0, 0.1);
+        border: 2px solid #ffffff;
+        backdrop-filter: blur(8px);
+
+        a {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 0.135em;
+
+            color: #000000;
+        }
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+
+        font-style: normal;
+        font-weight: 800;
+        font-size: 34px;
+        line-height: 41px;
+        letter-spacing: -0.05em;
+        text-transform: capitalize;
+
+        color: #ffffff;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 91px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        a {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+            letter-spacing: 0.135em;
+            text-transform: uppercase;
+
+            color: #ffffff;
+        }
+    }
+}
+
+.rectangle-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 76px 91px 76px 40px;
+}
+
+.text {
+    h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+
+        color: #ffffff;
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #ffffff;
+    }
+}
