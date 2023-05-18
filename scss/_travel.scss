@@ -1,0 +1,21 @@
+.travel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 55px;
+    margin: 0 0 0 288px;
+    padding: 100px 0;
+    overflow: hidden;
+
+    &__title {
+        padding: 0 25px 0 0;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 53px;
+        letter-spacing: 0.09em;
+
+        color: #000000;
+    }
+}
