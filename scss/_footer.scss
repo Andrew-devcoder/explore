@@ -1,6 +1,6 @@
 .footer {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    padding: 125px 0 0;
 
     min-height: 763px;
     background-color: #181818;
@@ -14,6 +14,7 @@
     &__col {
         display: flex;
         flex-direction: column;
+        gap: 17px;
 
         p {
             max-width: 368px;
@@ -27,6 +28,9 @@
     }
 
     &__icons {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
     }
 
     &__nav {
@@ -45,9 +49,15 @@
     }
 
     &__search {
+        margin: 30px 0;
+        position: relative;
     }
 }
 .col-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
     font-style: normal;
     font-weight: 800;
     font-size: 34px;
@@ -55,4 +65,53 @@
     letter-spacing: -0.05em;
 
     color: #ffffff;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: -0.05em;
+
+    color: #696060;
+}
+
+.search {
+    padding: 25px 58px;
+
+    background: #f4e8e8;
+    border-radius: 110px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.05em;
+
+    color: #afa0a0;
+
+    &__submit {
+        position: absolute;
+        right: 0;
+        padding: 25px 44px;
+
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: -0.05em;
+
+        color: #000000;
+
+        background: #f0aa21;
+        border-radius: 110px;
+    }
 }
