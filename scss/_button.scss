@@ -14,4 +14,74 @@
         background: #f0aa21;
         padding: 18px 47px;
     }
+
+    &__scroll {
+        width: 100px;
+        height: 60px;
+
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.135em;
+
+        color: #ffffff;
+        border-radius: 84px;
+        background: rgba(0, 0, 0, 0.2);
+        border: 2px solid #fff;
+        backdrop-filter: blur(8px);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+        transition: all 0.3s;
+
+        display: none;
+
+        &::before {
+            content: "";
+            border: solid #fff;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin: 0 10px 0 0;
+
+            animation: arrow-up 2s infinite;
+
+        }
+
+        &:hover {
+            background-color: #fff;
+            color: #000;
+
+            &::before {
+                border: solid #000;
+                border-width: 0 3px 3px 0;
+            }
+        }
+    }
+}
+
+.scroll-up {
+    position: fixed;
+    margin: 100px;
+    right: 0;
+    bottom: 0;
+}
+.visible {
+    display: block;
+}
+
+@keyframes arrow-up {
+    0% {
+        opacity: 0;
+        transform: rotate(-135deg) translate(-5px, -5px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(-135deg) translate(5px, 5px);
+    }
 }
