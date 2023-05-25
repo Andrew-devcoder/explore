@@ -18,7 +18,6 @@
 
         p {
             max-width: 368px;
-            font-style: normal;
             font-weight: 400;
             font-size: 20px;
             line-height: 24px;
@@ -28,27 +27,44 @@
     }
 
     &__icons {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
     }
 
     &__nav {
         li {
             padding: 0 0 20px 0;
         }
+
         a {
-            font-style: normal;
             font-weight: 400;
             font-size: 34px;
             line-height: 41px;
             letter-spacing: -0.05em;
 
             color: #ffffff;
+
+            &::after {
+                content: "";
+                display: block;
+                padding: 1px 0 0;
+                border-bottom: 2px solid white;
+                width: 0;
+                transition: all 0.2s ease-in-out;
+            }
+
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
         }
     }
 
-    &__search {
+    &__send-email {
         margin: 30px 0;
         position: relative;
     }
@@ -58,7 +74,6 @@
     align-items: center;
     gap: 10px;
 
-    font-style: normal;
     font-weight: 800;
     font-size: 34px;
     line-height: 41px;
@@ -74,7 +89,6 @@
     transform: translate(-50%);
 
     text-align: center;
-    font-style: normal;
     font-weight: 400;
     font-size: 34px;
     line-height: 41px;
@@ -83,13 +97,13 @@
     color: #696060;
 }
 
-.search {
+.send-email {
     padding: 25px 58px;
 
     background: #f4e8e8;
+    border: 2px solid #f4e8e8;
     border-radius: 110px;
 
-    font-style: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: 34px;
@@ -103,7 +117,6 @@
         padding: 25px 44px;
 
         text-transform: uppercase;
-        font-style: normal;
         font-weight: 600;
         font-size: 28px;
         line-height: 34px;
@@ -112,6 +125,14 @@
         color: #000000;
 
         background: #f0aa21;
+        border: 2px solid #f0aa21;
         border-radius: 110px;
+
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: #f0aa21;
+            background: #181818;
+        }
     }
 }

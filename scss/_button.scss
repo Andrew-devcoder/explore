@@ -2,40 +2,65 @@
     border-radius: 84px;
     padding: 25px 44px;
 
-    &__intro {
+    &__header {
         border: 3px solid #ffffff;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: #000;
+            background-color: #fff;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        }
     }
+
     &__rectangle {
         background: #ffffff;
         border: 3px solid #ffffff;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: #ffffff;
+            border: 2px solid #fff;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(8px);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        }
     }
 
     &__discover {
         background: #f0aa21;
+        border: 2px solid #f0aa21;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: #f0aa21;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(8px);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        }
     }
 
     &__scroll {
-        width: 100px;
-        height: 60px;
+        position: fixed;
+        right: 100px;
+        bottom: -100px;
 
         text-transform: uppercase;
-        font-style: normal;
         font-weight: 800;
         font-size: 16px;
-        line-height: 19px;
         text-align: center;
         letter-spacing: 0.135em;
 
         color: #ffffff;
         border-radius: 84px;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.3);
         border: 2px solid #fff;
         backdrop-filter: blur(8px);
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 
         transition: all 0.3s;
 
-        display: none;
+        z-index: 99;
 
         &::before {
             content: "";
@@ -60,14 +85,8 @@
     }
 }
 
-.scroll-up {
-    position: fixed;
-    margin: 100px;
-    right: 0;
-    bottom: 0;
-}
 .visible {
-    display: block;
+    bottom: 100px;
 }
 
 @keyframes arrow-up {

@@ -11,7 +11,6 @@
     &__title {
         text-transform: uppercase;
         text-align: center;
-        font-style: normal;
         font-weight: 800;
         font-size: 133px;
         line-height: 161px;
@@ -27,7 +26,6 @@
 
         text-transform: uppercase;
         text-align: end;
-        font-style: normal;
         font-weight: 800;
         font-size: 34px;
         line-height: 41px;
@@ -37,11 +35,9 @@
     }
 
     a {
-        font-style: normal;
         font-weight: 800;
         font-size: 16px;
         line-height: 19px;
-        /* identical to box height */
 
         text-align: center;
         letter-spacing: 0.135em;

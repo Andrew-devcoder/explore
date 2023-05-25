@@ -10,7 +10,6 @@
         margin: 279px 0 0 0.495em;
 
         text-align: center;
-        font-style: normal;
         font-weight: 800;
         font-size: 133px;
         line-height: 161px;
@@ -23,7 +22,6 @@
         margin: 0 0 0 2.245em;
 
         text-align: center;
-        font-style: normal;
         font-weight: 800;
         font-size: 18px;
         line-height: 22px;
@@ -39,16 +37,35 @@
         backdrop-filter: blur(8px);
 
         a {
-            font-style: normal;
             font-weight: 800;
             font-size: 16px;
-            line-height: 19px;
-            /* identical to box height */
 
             text-align: center;
             letter-spacing: 0.135em;
 
             color: #000000;
         }
+    }
+}
+
+.rectangle-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 76px 91px 76px 40px;
+}
+
+.text {
+    color: #ffffff;
+    h3 {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 17px;
     }
 }

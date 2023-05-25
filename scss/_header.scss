@@ -28,7 +28,6 @@
         align-items: center;
         gap: 15px;
 
-        font-style: normal;
         font-weight: 800;
         font-size: 34px;
         line-height: 41px;
@@ -51,43 +50,27 @@
         }
 
         a {
-            font-style: normal;
             font-weight: 800;
             font-size: 16px;
-            line-height: 19px;
-            /* identical to box height */
             letter-spacing: 0.135em;
             text-transform: uppercase;
 
             color: #ffffff;
+
+            &::after {
+                content: "";
+                display: block;
+                padding: 1px 0 0;
+                border-bottom: 2px solid white;
+                transform: scaleX(0);
+                transition: all 0.2s ease-in-out;
+            }
+
+            &:hover {
+                &::after {
+                    transform: scaleX(1);
+                }
+            }
         }
-    }
-}
-
-.rectangle-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 76px 91px 76px 40px;
-}
-
-.text {
-    h3 {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 17px;
-        line-height: 21px;
-
-        color: #ffffff;
-    }
-
-    p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-
-        color: #ffffff;
     }
 }
