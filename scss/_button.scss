@@ -1,8 +1,13 @@
 .button {
-    border-radius: 84px;
     padding: 25px 44px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.135em;
+    border-radius: 84px;
 
     &__header {
+        font-weight: 800;
+        color: #ffffff;
         border: 3px solid #ffffff;
         transition: all 0.2s ease-in-out;
 
@@ -14,6 +19,7 @@
     }
 
     &__rectangle {
+        text-transform: capitalize;
         background: #ffffff;
         border: 3px solid #ffffff;
         transition: all 0.2s ease-in-out;
@@ -28,6 +34,9 @@
     }
 
     &__discover {
+        font-weight: 800;
+        color: #000000;
+
         background: #f0aa21;
         border: 2px solid #f0aa21;
         transition: all 0.2s ease-in-out;
@@ -45,11 +54,9 @@
         right: 100px;
         bottom: -100px;
 
-        text-transform: uppercase;
         font-weight: 800;
         font-size: 16px;
         text-align: center;
-        letter-spacing: 0.135em;
 
         color: #ffffff;
         border-radius: 84px;
