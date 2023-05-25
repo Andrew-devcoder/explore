@@ -1,18 +1,17 @@
 .button {
     border-radius: 84px;
+    padding: 25px 44px;
+
     &__intro {
         border: 3px solid #ffffff;
-        padding: 18px 44px;
     }
     &__rectangle {
         background: #ffffff;
         border: 3px solid #ffffff;
-        padding: 18px 36px;
     }
 
     &__discover {
         background: #f0aa21;
-        padding: 18px 47px;
     }
 
     &__scroll {
@@ -47,7 +46,6 @@
             margin: 0 10px 0 0;
 
             animation: arrow-up 2s infinite;
-
         }
 
         &:hover {

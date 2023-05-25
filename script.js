@@ -1,3 +1,15 @@
+window.addEventListener("scroll", function () {
+    let navbar = document.querySelector(".header");
+    if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+    ) {
+        navbar.classList.add("shrink");
+    } else {
+        navbar.classList.remove("shrink");
+    }
+});
+
 const buttonToUp = document.querySelector(".button__scroll");
 
 window.addEventListener("scroll", () => {
@@ -14,15 +26,3 @@ buttonToUp.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
-// $(window).scroll(function () {
-//     if ($(window).scrollTop() > 300) {
-//         btn.addClass("show");
-//     } else {
-//         btn.removeClass("show");
-//     }
-// });
-
-// btn.on("click", function (e) {
-//     e.preventDefault();
-//     $("html, body").animate({ scrollTop: 0 }, "300");
-// });
