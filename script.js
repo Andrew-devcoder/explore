@@ -26,3 +26,13 @@ buttonToUp.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+
+window.addEventListener("scroll", () => {
+    let scroll = this.scrollY;
+    const gif = document.querySelector(".gif-container");
+    if (scroll === 0) {
+        gif.style.left = scroll - 125 + "px";
+    } else if (scroll > 0) {
+        gif.style.left = scroll - 35 + "px";
+    }
+});

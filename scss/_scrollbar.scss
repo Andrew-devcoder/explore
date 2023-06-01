@@ -1,0 +1,16 @@
+.gif-container {
+    position: fixed;
+    bottom: 0;
+    left: -100px;
+    overflow: hidden;
+    width: 150px;
+    height: 100px;
+    z-index: 99;
+}
+
+.gif-container img {
+    position: absolute;
+    bottom: 0;
+    left: -33px;
+    width: 100%;
+}
