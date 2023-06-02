@@ -6,6 +6,10 @@
     width: 150px;
     height: 100px;
     z-index: 99;
+
+    @media (max-width: 825px) {
+        width: 100px;
+    }
 }
 
 .gif-container img {
@@ -13,4 +17,8 @@
     bottom: 0;
     left: -33px;
     width: 100%;
+
+    @media (max-width: 825px) {
+        left: -10px;
+    }
 }

@@ -4,8 +4,23 @@
     align-items: center;
     gap: 55px;
     margin-left: 288px;
+    margin-left: 15%;
     padding: 100px 0;
     overflow: hidden;
+
+    @media (max-width: 1550px) {
+        margin-left: 10%;
+    }
+
+    @media (max-width: 1140px) {
+        gap: 40px;
+        margin-left: 8%;
+    }
+
+    @media (max-width: 976px) {
+        gap: 30px;
+        margin-left: 5%;
+    }
 
     &__title {
         padding-right: 25px;
@@ -14,5 +29,25 @@
         font-size: 44px;
         line-height: 53px;
         letter-spacing: 0.09em;
+
+        @media (max-width: 1230px) {
+            font-size: 32px;
+            padding: 0;
+        }
+
+        @media (max-width: 976px) {
+            font-size: 36px;
+        }
+
+        @media (max-width: 825px) {
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+
+    & img {
+        @media (max-width: 1550px) {
+            width: 25%;
+        }
     }
 }

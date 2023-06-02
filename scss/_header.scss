@@ -15,6 +15,14 @@
 
     transition: all 0.3s ease-in-out;
 
+    @media (max-width: 1140px) {
+        height: 120px;
+    }
+
+    @media (max-width: 825px) {
+        height: 80px;
+    }
+
     &__items {
         display: flex;
         flex-direction: row;
@@ -28,13 +36,34 @@
         align-items: center;
         gap: 15px;
 
-        font-weight: 800;
-        font-size: 34px;
-        line-height: 41px;
-        letter-spacing: -0.05em;
-        text-transform: capitalize;
-
         color: #ffffff;
+
+        @media (max-width: 1230px) {
+            gap: 10px;
+        }
+
+        & svg {
+            @media (max-width: 1230px) {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        & h2 {
+            font-weight: 800;
+            font-size: 34px;
+            line-height: 41px;
+            letter-spacing: -0.05em;
+            text-transform: capitalize;
+
+            @media (max-width: 1230px) {
+                font-size: 24px;
+            }
+
+            @media (max-width: 976px) {
+                display: none;
+            }
+        }
     }
 
     &__nav {
@@ -45,6 +74,15 @@
 
         font-size: 16px;
         letter-spacing: 0.135em;
+
+        @media (max-width: 1230px) {
+            gap: 40px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 825px) {
+            display: none;
+        }
 
         ul {
             display: flex;
