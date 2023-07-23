@@ -81,6 +81,10 @@
             right: 50px;
         }
 
+        @media (max-width: 425px) {
+            right: 10px;
+        }
+
         &::before {
             content: "";
             border: solid #fff;
@@ -110,6 +114,10 @@
 
 .visible {
     bottom: 100px;
+
+    @media (max-width: 425px) {
+        bottom: 20px;
+    }
 }
 
 @keyframes arrow-up {

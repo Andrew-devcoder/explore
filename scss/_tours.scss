@@ -23,6 +23,11 @@
         @media (max-width: 1230px) {
             font-size: 28px;
         }
+
+        @media (max-width: 425px) {
+            font-size: 22px;
+            margin-bottom: 0;
+        }
     }
 
     &__title {
@@ -43,6 +48,11 @@
         @media (max-width: 825px) {
             margin-bottom: 60px;
         }
+
+        @media (max-width: 425px) {
+            margin-bottom: 20px;
+            font-size: 38px;
+        }
     }
 
     &__items {
@@ -54,6 +64,11 @@
 
         @media (max-width: 976px) {
             flex-wrap: wrap;
+        }
+
+        @media (max-width: 425px) {
+            padding: 0 10px;
+            gap: 20px;
         }
     }
 }
@@ -84,6 +99,11 @@
 
     @media (max-width: 976px) {
         flex-basis: 48%;
+    }
+
+    @media (max-width: 425px) {
+        flex-basis: 40%;
+        height: 120px;
     }
 
     &:hover {

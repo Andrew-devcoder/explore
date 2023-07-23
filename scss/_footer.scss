@@ -9,6 +9,10 @@
         padding: 50px 0 0;
     }
 
+    @media (max-width: 425px) {
+        padding: 30px 10px;
+    }
+
     &__items {
         display: flex;
         flex-direction: row;
@@ -33,6 +37,10 @@
         display: flex;
         flex-direction: column;
         gap: 17px;
+
+        @media (max-width: 425px) {
+            width: 100%;
+        }
 
         p {
             max-width: 368px;
@@ -94,6 +102,14 @@
     &__send-email {
         margin: 30px 0;
         position: relative;
+
+        @media (max-width: 425px) {
+            margin: 20px 30px;
+        }
+
+        @media (max-width: 320px) {
+            margin: 20px 10px;
+        }
 
         input {
             width: 100%;
