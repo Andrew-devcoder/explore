@@ -29,6 +29,10 @@
         line-height: 161px;
         letter-spacing: 0.495em;
 
+        @media (max-width: 1366px) {
+            margin-top: 220px;
+        }
+
         @media (max-width: 1230px) {
             margin-top: 60px;
             font-size: 100px;

@@ -68,12 +68,21 @@
             width: fit-content;
         }
 
+        // @media (max-width: 1366px) {
+        //     padding: 0 0 15px 0;
+        // }
+
         a {
             font-size: 34px;
             line-height: 41px;
             letter-spacing: -0.05em;
 
             color: #ffffff;
+
+            @media (max-width: 1366px) {
+                font-size: 26px;
+                line-height: 31px;
+            }
 
             @media (max-width: 1230px) {
                 font-size: 16px;
@@ -153,6 +162,10 @@
     letter-spacing: -0.05em;
 
     color: #696060;
+
+    @media (max-width: 1366px) {
+        font-size: 24px;
+    }
 
     @media (max-width: 1230px) {
         font-size: 14px;

@@ -6,7 +6,7 @@
     border-radius: 84px;
 
     @media (max-width: 1366px) {
-        padding: 20px 40px;
+        padding: 18px 28px;
     }
 
     @media (max-width: 1230px) {
@@ -81,9 +81,13 @@
 
         z-index: 99;
 
-        @media (max-width: 1230px) {
+        @media (max-width: 1366px) {
             right: 50px;
         }
+
+        // @media (max-width: 1230px) {
+        //     right: 50px;
+        // }
 
         @media (max-width: 425px) {
             right: 10px;
@@ -118,6 +122,10 @@
 
 .visible {
     bottom: 100px;
+
+    @media (max-width: 1366px) {
+        bottom: 70px;
+    }
 
     @media (max-width: 425px) {
         bottom: 20px;

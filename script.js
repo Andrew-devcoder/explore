@@ -2,7 +2,7 @@ const buttonToUp = document.querySelector(".button__scroll");
 const navbar = document.querySelector(".header");
 
 const changeHeader = () => {
-    if (window.pageXOffset > 200 || document.documentElement.scrollTop > 200) {
+    if (window.pageXOffset > 140 || document.documentElement.scrollTop > 140) {
         buttonToUp.classList.add("visible");
         navbar.classList.add("shrink");
     } else {

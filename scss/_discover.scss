@@ -27,6 +27,11 @@
 
         padding: 237px 0 0;
 
+        @media (max-width: 1366px) {
+            font-size: 122px;
+            padding: 160px 0 0;
+        }
+
         @media (max-width: 1230px) {
             font-size: 110px;
             padding: 137px 0 0;
@@ -63,9 +68,16 @@
         line-height: 41px;
         letter-spacing: 0.495em;
 
+        @media (max-width: 1366px) {
+            font-size: 28px;
+            max-width: 1100px;
+            margin: 0 0 150px;
+        }
+
         @media (max-width: 1230px) {
             font-size: 28px;
             max-width: 1100px;
+            margin: 0 0 111px;
         }
 
         @media (max-width: 1140px) {
