@@ -5,6 +5,10 @@
     letter-spacing: 0.135em;
     border-radius: 84px;
 
+    @media (max-width: 1366px) {
+        padding: 20px 40px;
+    }
+
     @media (max-width: 1230px) {
         padding: 12px 22px;
         font-size: 14px;
