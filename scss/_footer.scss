@@ -65,6 +65,7 @@
     &__nav {
         li {
             padding: 0 0 20px 0;
+            width: fit-content;
         }
 
         a {
@@ -92,7 +93,7 @@
                 &::after {
                     width: 100%;
                     @media (max-width: 1550px) {
-                        width: 40%;
+                        width: 100%;
                     }
                 }
             }
