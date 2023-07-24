@@ -1,8 +1,7 @@
 const buttonToUp = document.querySelector(".button__scroll");
-const gif = document.querySelector(".gif-container");
 const navbar = document.querySelector(".header");
 
-function changeHeader() {
+const changeHeader = () => {
     if (window.pageXOffset > 200 || document.documentElement.scrollTop > 200) {
         buttonToUp.classList.add("visible");
         navbar.classList.add("shrink");
@@ -10,9 +9,9 @@ function changeHeader() {
         buttonToUp.classList.remove("visible");
         navbar.classList.remove("shrink");
     }
-}
+};
 
-function changeHeaderTable() {
+const changeHeaderTable = () => {
     if (window.pageXOffset > 80 || document.documentElement.scrollTop > 80) {
         buttonToUp.classList.add("visible");
         navbar.classList.add("shrink--table");
@@ -20,16 +19,22 @@ function changeHeaderTable() {
         buttonToUp.classList.remove("visible");
         navbar.classList.remove("shrink--table");
     }
-}
+};
 
-function progressScrollbar() {
-    let scroll = this.scrollY;
-    if (scroll === 0) {
-        gif.style.left = scroll - 125 + "px";
-    } else if (scroll > 0) {
-        gif.style.left = scroll - 35 + "px";
-    }
-}
+const progressScrollbar = () => {
+    const scroll = window.scrollY;
+    const screenWidth = window.innerWidth;
+    const gif = document.querySelector(".gif-container");
+
+    const newPosition =
+        (scroll /
+            (document.documentElement.scrollHeight - window.innerHeight)) *
+        (screenWidth - 125);
+
+    gif.style.left = newPosition + "px";
+};
+
+window.addEventListener("scroll", progressScrollbar);
 
 window.addEventListener("scroll", function () {
     progressScrollbar();
