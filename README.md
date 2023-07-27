@@ -16,3 +16,5 @@ The project used a layout found in the Figma community. [Link to the layout.](<h
 ## Sreen Shot
 
 ![Mobile Screenshot](/screenshot/mobile.png?raw=true "Mobile")
+
+<img src="/screenshot/mobile.png" alt="Mobile Screenshot" width="300">
