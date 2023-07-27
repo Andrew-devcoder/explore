@@ -13,8 +13,6 @@
 
 The project used a layout found in the Figma community. [Link to the layout.](<https://www.figma.com/file/nKuSCKtUVmeFaaCemi6RBu/web-design-(Community)-(Copy)?type=design&mode=design&t=K9kPFRzuW0jCJdiM-0>)
 
-## Sreen Shot
+## Screenshot
 
-![Mobile Screenshot](/screenshot/mobile.png?raw=true "Mobile")
-
-<img src="/screenshot/mobile.png" alt="Mobile Screenshot" width="300">
+<img src="/screenshot/mobile.png" alt="Mobile Screenshot" width="50%">
