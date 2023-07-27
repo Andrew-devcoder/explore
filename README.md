@@ -16,6 +16,6 @@ The project used a layout found in the Figma community. [Link to the layout.](<h
 ## Screenshot
 
 <div style="display: flex; flex-direction: row;">
-  <img src="/screenshot/mobile.png" alt="Mobile Screenshot" width="23%" >
   <img src="/screenshot/fullsize.png" alt="Mobile Screenshot" width="75%" >
+  <img src="/screenshot/mobile.png" alt="Mobile Screenshot" width="23%" >
 </div>
