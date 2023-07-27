@@ -51,3 +51,17 @@ buttonToUp.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+
+// burger menu
+const burgerButton = document.querySelector(".button__burger");
+const listMenu = document.querySelector(".header__nav");
+
+burgerButton.addEventListener("click", () => {
+    burgerButton.classList.toggle("button__burger--active");
+
+    if (burgerButton.classList.contains("button__burger--active") === true) {
+        listMenu.classList.add("opacity");
+    } else {
+        listMenu.classList.remove("opacity");
+    }
+});
