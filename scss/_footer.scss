@@ -185,6 +185,10 @@
 
     color: #afa0a0;
 
+    @media (max-width: 1366px) {
+        padding: 15px 44px;
+    }
+
     @media (max-width: 1230px) {
         padding: 10px 30px;
         font-size: 16px;
@@ -208,6 +212,10 @@
         border-radius: 110px;
 
         transition: all 0.2s ease-in-out;
+
+        @media (max-width: 1366px) {
+            padding: 15px 44px;
+        }
 
         @media (max-width: 1230px) {
             padding: 10px 30px;
