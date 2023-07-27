@@ -15,4 +15,4 @@ The project used a layout found in the Figma community. [Link to the layout.](<h
 
 ## Sreen Shot
 
-![Alt text](/screenshot/mobile.png?raw=true | width=100 "Mobile" )
+![image](/screenshot/mobile.png?raw=true | width=100 "Mobile" )
