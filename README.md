@@ -14,6 +14,7 @@
     -   Working with the burger menu for navigation
     -   Progressbar showing page scrolling progress
     -   Interaction with header (page title) for dynamic change
+    -   Button for scrolling the page up
 
 ## Layout
 
