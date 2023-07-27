@@ -10,6 +10,10 @@
 -   Smooth hover effects to improve user experience
 -   Responsive design for different screen sizes
 -   Progressbar showing page progress
+-   Using vanilla JavaScript for this functionality:
+    -   Working with the burger menu for navigation
+    -   Progressbar showing page scrolling progress
+    -   Interaction with header (page title) for dynamic change
 
 ## Layout
 
